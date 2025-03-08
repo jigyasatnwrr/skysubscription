@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  
+    <!-- Button trigger modal -->
+    <h1 class="head1">Sign up for free netflix subscribtion !!</h1>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Sign Up
+      </button>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="column" id="main">
+            <h1>Sign Up </h1>
+            
+            <h3>🔥 Limited Free Subscriptions Available!</h3>
+            <p id="counter">Only 50 left!</p>
+            <p id="message"></p>
+            <form id="step1">
+              <div class="form-group">
+                <label for="exampleInputName">Identify Yourself <p>&#xf6be;	
+                </p>	
+                </label>
+                <input type="name" class="form-control" id="exampleInputName" >
+                <small class="text-danger" id="nameError"></small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">How do i find you? </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                <small class="text-danger" id="emailError"></small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">What the magic words for setup?</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" >
+                <small class="text-danger" id="passwordError"></small>
+              </div>
+              <div class="form-group">
+                <label>
+                    <input type="checkbox" checked>
+                    <strong>We may contact you about services you may like unless you uncheck to opt out </strong>
+                  </label>
+              </div>
+              
+              <button type="button" class="btn btn-primary" id="nextButton1">Next</button>
+
+            </form>
+
+          <!-- Step 2 -->
+          <form id="step2" style="display:none">
+            <h1>Useless Personal Information</h1>
+            <div class="form-group">
+              <label>Your Zodiac Sign</label>
+              <select class="form-control" id="zodiac">
+                <option value="">Select your zodiac sign</option>
+                <option>Aries</option>
+                <option>Taurus</option>
+                <option>Gemini</option>
+                <option>Cancer</option>
+                <option>Leo</option>
+                <option>Virgo</option>
+                <option>Libra</option>
+                <option>Scorpio</option>
+                <option>Sagittarius</option>
+                <option>Capricorn</option>
+                <option>Aquarius</option>
+                <option>Pisces</option>
+              </select>
+              <small class="text-danger" id="zodiacError"></small>
+            </div>
+            <div class="form-group">
+              <label>Your Favorite Pizza Topping</label>
+              <input type="text" class="form-control" id="pizzaTopping">
+              <small class="text-danger" id="pizzaToppingError"></small>
+            </div>
+            <div class="form-group">
+              <label>Your Blood Type</label>
+              <select class="form-control" id="bloodType">
+                <option value="">Select your blood type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <small class="text-danger" id="bloodTypeError"></small>
+            </div>
+            <button type="button" class="btn btn-primary" id="nextButton2">Next</button>
+          </form>
+
+
+
+
+          <!-- Step 3 -->
+          <form id="step3" style="display:none">
+            <h1>Bizarre Technical Questions</h1>
+            <div class="form-group">
+              <label>What Operating System Do You Use?</label>
+              <select class="form-control" id="os">
+                <option>Windows</option>
+                <option>MacOS</option>
+                <option>Linux</option>
+                <option>Other</option>
+              </select>
+              <small class="text-danger" id="osError"></small>
+            </div>
+            <div class="form-group">
+              <label>What Resolution Is Your Screen Set To?</label>
+              <input type="text" class="form-control" id="resolution">
+              <small class="text-danger" id="resolutionError"></small>
+            </div>
+            <div class="form-group">
+              <label>Are You Using Incognito Mode?</label>
+              <input type="text" class="form-control" id="incognito">
+              <small class="text-danger" id="incognitoError"></small>
+            </div>
+            <button type="button" class="btn btn-primary" id="nextButton3">Next</button>
+          </form>
+
+          <!-- Step 4 -->
+          <form id="step4" style="display:none">
+            <h1>Awkward Personal Questions</h1>
+            <div class="form-group">
+              <label>Your Ex's Name</label>
+              <input type="text" class="form-control" id="exName">
+              <small class="text-danger" id="exNameError"></small>
+            </div>
+            <div class="form-group">
+              <label>Have You Ever Cried Watching Netflix?</label>
+              <input type="text" class="form-control" id="criedNetflix">
+              <small class="text-danger" id="criedNetflixError"></small>
+            </div>
+            <div class="form-group">
+              <label>Your Current Relationship Status</label>
+              <input type="text" class="form-control" id="relationshipStatus">
+              <small class="text-danger" id="relationshipStatusError"></small>
+            </div>
+            <button type="button" class="btn btn-primary" id="nextButton4">Next</button>
+          </form>
+
+          <!-- Step 5 -->
+          <form id="step5" style="display:none">
+            
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"> I agree not to share my subscription with my ex-partner.
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"> I agree Netflix may use my viewing habits to manipulate my choices.
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"> I understand if I complain about buffering, my subscription may terminate.
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          <div>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                
+                <title>Path</title>
+                <desc>Created with Sketch.</desc>
+                <g  id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill=" #872341"></path>
+                </g>
+            </svg>
+          </div>
+          <div class="column" id="secondary">
+            <div class="sec-content">
+              <h2>Welcome Back!</h2>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
