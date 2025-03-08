@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
 </head>
 <body>
-  
+
     <!-- Button trigger modal -->
     <h1 class="head1">Sign up for free netflix subscribtion !!</h1>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -17,6 +18,8 @@
 
   
   <!-- Modal -->
+   
+
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog " role="document">
       <div class="modal-content">
@@ -24,13 +27,23 @@
           <div class="column" id="main">
             <h1>Sign Up </h1>
             
-            <h3>🔥 Limited Free Subscriptions Available!</h3>
+            <h3>Limited Free Subscriptions Available!</h3>
             <p id="counter">Only 50 left!</p>
             <p id="message"></p>
+            <!-- Bat Animation Container -->
+<div id="bat-animation">
+  <div class="bat" style="top: 10%; left: -100px; animation-delay: 0s;"></div>
+  <div class="bat" style="top: 20%; left: -150px; animation-delay: 2s;"></div>
+  <div class="bat" style="top: 30%; left: -200px; animation-delay: 4s;"></div>
+  <div class="bat" style="top: 40%; left: -250px; animation-delay: 6s;"></div>
+  <div class="bat" style="top: 50%; left: -300px; animation-delay: 8s;"></div>
+  <div class="bat" style="top: 60%; left: -350px; animation-delay: 10s;"></div>
+  <div class="bat" style="top: 70%; left: -400px; animation-delay: 12s;"></div>
+</div>
+
             <form id="step1">
               <div class="form-group">
-                <label for="exampleInputName">Identify Yourself <p>&#xf6be;	
-                </p>	
+                <label for="exampleInputName">Identify Yourself
                 </label>
                 <input type="name" class="form-control" id="exampleInputName" >
                 <small class="text-danger" id="nameError"></small>
@@ -47,7 +60,7 @@
               </div>
               <div class="form-group">
                 <label>
-                    <input type="checkbox" checked>
+                    <input type="checkbox" style="accent-color:black;" checked>
                     <strong>We may contact you about services you may like unless you uncheck to opt out </strong>
                   </label>
               </div>
@@ -58,7 +71,6 @@
 
           <!-- Step 2 -->
           <form id="step2" style="display:none">
-            <h1>Useless Personal Information</h1>
             <div class="form-group">
               <label>Your Zodiac Sign</label>
               <select class="form-control" id="zodiac">
@@ -192,5 +204,14 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+
+
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

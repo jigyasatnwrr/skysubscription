@@ -175,3 +175,22 @@ document.getElementById('nextButton4').addEventListener('click', function () {
 
 
 
+// Start the bat animation
+function startBatAnimation() {
+  document.getElementById('bat-animation').style.display = 'block';
+}
+
+// Stop the bat animation
+function stopBatAnimation() {
+  document.getElementById('bat-animation').style.display = 'none';
+}
+
+// Start animation when the "Sign Up" button is clicked
+document.getElementById('signUpButton').addEventListener('click', function () {
+  startBatAnimation();
+});
+
+// Stop animation when the modal is closed
+document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+  stopBatAnimation();
+});
