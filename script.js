@@ -198,3 +198,34 @@ function showRandomFact() {
 }
 
 setInterval(showRandomFact, 15000);
+
+
+let currentNumber = 0;
+const phoneDisplay = document.getElementById('phone');
+
+function incrementPhone() {
+    // INCREMENT THE NUMBER
+    currentNumber++;
+
+    // CONVERT TO 10 DIGIT NUMBER
+    let numberString = currentNumber.toString().padStart(10, '0');
+
+    // SPLIT INTO 00000-00000
+    let leftPart = numberString.substring(0, 5);
+    let rightPart = numberString.substring(5);
+
+    // UPDATE THE DISPLAY
+    phoneDisplay.value = leftPart + '-' + rightPart;
+}
+function validateForm() {
+  const phoneInput = document.getElementById('phone');
+  const phoneValue = phoneInput.value;
+
+ 
+  if (phoneInput.checkValidity()) {
+      alert('vaild form!');
+      
+  } else {
+      alert('Please enter a valid 10-digit phone number in the format 00000-00000.');
+  }
+}
