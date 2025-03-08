@@ -28,7 +28,17 @@ body {
   color: white;
   font-weight: 100px;
 }
-
+.form-control,.modal-body input,.modal-body select.input-field,.modal-body input[type="password"]{
+  background-color: rgb(74, 73, 73);
+  color: white;
+  font-weight: bolder;
+  outline: none;
+  box-shadow: 0 0 10px rgba(59, 60, 60, 0.2);
+}
+form-control:focus,.modal-body input:focus,.modal-body select.input-field:focus,.modal-body input[type="password"]:focus {
+  background-color:rgb(74, 73, 73);
+  border: 2px solid white;
+}
 .modal-content {
   border-radius: 4rem;
   width: 140%;
@@ -94,7 +104,7 @@ form {
   background:#8E1616;
 background: -moz-linear-gradient(left, #8E1616 0%, #872341 99%); 
 background: -webkit-linear-gradient(left, #8E1616 0%,#872341 99%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #8E1616 0%,#872341 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to right, #8E1616 0%,#872341 99%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#fca86c',GradientType=1 ); 
 }
 
@@ -106,7 +116,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', end
   width: 100%;
 }
 #secondary .btn-primary {
-  background: #f8f9fa4f;
+  background: rgb(74, 73, 73);
   color:whitesmoke;
   border: none;
 }
@@ -135,35 +145,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', end
 }
 #message {
   color: green;
-  font-size: 18px;}
+  
+font-weight: 400px;}
+
+  
 
 
-/* Bat Animation Styles */
-#bat-animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Ensure it doesn't block clicks */
-  z-index: 9999; /* Make sure it's on top of everything */
-  display: none; /* Hide by default */
-}
-
-.bat {
-  position: absolute;
-  width: 50px; /* Size of the bat */
-  height: 50px;
-  background-image: url('https://www.svgrepo.com/show/533636/bat.svg'); /* Bat SVG image */
-  background-size: cover;
-  animation: fly 8s linear infinite;
-}
-
-@keyframes fly {
-  0% {
-    left: -100px; /* Start off-screen to the left */
-  }
-  100% {
-    left: 100%; /* Fly to the right edge of the screen */
-  }
-}
+    
